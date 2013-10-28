@@ -6,11 +6,12 @@
     <title>Blog | Centindu</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
+    <link rel="stylesheet" href="style.css" /> 
   </head>
 <body>
 
-  <div role='banner'>
+  <div role='banner' class='viewport'>
     <a href="/" accesskey="h" title="Go to Homepage">Centindu</a>
     <nav>
       <a href="#">Home</a>
@@ -28,13 +29,15 @@
   </div>
 
   <header>
-    <h1>Blog Page</h1>
-    <p>Donec iaculis metus vitae ligula elementum.</p>
+    <div class='viewport'>
+      <h1>Blog Page</h1>
+      <p>Donec iaculis metus vitae ligula elementum.</p>
+    </div>
   </header>
 
+  <div role='main' class='viewport'>
     <ol>
       <li>
-
         <article>
           <div>
             <ul>
@@ -166,8 +169,9 @@
       </div>
 
     </aside>
+  </div>
 
-  <footer role='contentinfo'>
+  <footer role='contentinfo' class='viewport'>
     <h1>Explore More</h1>
 
     <div>
@@ -227,7 +231,6 @@
       </ol>
       <a href="#">Contact</a>
     </nav>
-
   </footer>
 
 </body>

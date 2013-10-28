@@ -1,0 +1,141 @@
+/*
+ * style.css
+ * copyright 2013 Janson Hartliep
+ *
+ * Table of Contents
+ * - Base Styles
+ * - Abstract Classes
+ * - Site Banner
+ * - Site Footer
+ * - Content Styles
+ * 
+ * ----------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------
+ * Base Styles
+ * ----------------------------------------------------------------*/
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 10px;
+    height: 100%;
+    background: url(img/bg-background.jpg) repeat 0 0, #fafafa;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font: normal 400 1.2rem / 1.666666667 'Helvetica', 'Arial', sans-serif;
+    color: #b0b0b0;
+  }
+
+  h1, h2, h3 {
+    font: normal 400 3rem 'Open Sans', 'open-sans', 'Century Gothic', 'Apple Gothic', sans-serif;
+    text-transform: uppercase;
+    color: #515050;
+  }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.714285714;
+    color: #46a4d5;
+  }
+
+  a {
+    -webkit-transition: all 333ms ease-out;
+    -moz-transition: all 333ms ease-out;
+    -ms-transition: all 333ms ease-out;
+    -o-transition: all 333ms ease-out;
+    transition: all 333ms ease-out;
+    color: #46a4d5;
+    text-decoration: none;
+  }
+    a:hover {
+      color: #515050;
+      text-decoration: underline;
+    }
+
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+    li {
+      padding-bottom: .5em;
+      border-bottom: 1px solid #ededed;
+    }
+
+  article {
+    background: #fff;
+  }
+    article h1 {
+      text-transform: none;
+    }
+
+/* -----------------------------------------------------------------
+ * Abstract Classes 
+ * ----------------------------------------------------------------*/
+  .viewport {
+    margin: 0 auto;
+    max-width: 98rem;
+  }
+  .viewport:before, .cf:before, 
+  .viewport:after, .cf:after {
+    content: " "; 
+    display: table; 
+  }
+  .viewport:after, .cf:after {
+    clear: both;
+  }
+
+/* -----------------------------------------------------------------
+ * Site Banner
+ * ----------------------------------------------------------------*/
+
+/*
+*[role='banner'] {
+  border-bottom: 1px solid #59A4D2;
+}
+  *[role='banner']:before, *[role='banner']:after {
+    content:"";
+    display:table;
+  }
+  *[role='banner']:after {
+    clear:both;
+  }
+  *[role='banner'] a {
+    float: left;
+    width: auto;
+  }
+  *[role='banner'] nav {
+    float: right;
+    width: auto;
+  }
+
+header h1 {
+  font-size: 3rem;
+}
+
+*[role='main'] > ol {
+  padding: 0;
+  float: left;
+  width: 70%;
+}
+*[role='main'] > ol + ol {
+  display: none;
+}
+*[role='main'] > aside {
+  float: right;
+  width: 30%;
+}
+  *[role='main']:before, *[role='main']:after {
+    content:"";
+    display:table;
+  }
+  *[role='banner']:after {
+    clear:main;
+  }
+*/
