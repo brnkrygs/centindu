@@ -1,0 +1,227 @@
+/* -----------------------------------------------------------------
+ * Type variables
+ * ----------------------------------------------------------------*/
+/* -----------------------------------------------------------------
+ * Colours
+ * ----------------------------------------------------------------*/
+/* -----------------------------------------------------------------
+ * Placeholders
+ * ----------------------------------------------------------------*/
+h1, h2, h3 {
+  font: normal 300 3rem "Open Sans", "open-sans", "Century Gothic", "Apple Gothic", sans-serif;
+  text-transform: uppercase;
+  color: #515050; }
+
+/*
+ * style.css
+ * copyright 2013 Janson Hartliep
+ *
+ * Table of Contents
+ * - Base Styles
+ * - Abstract Classes
+ * - Site Banner
+ * - Site Footer
+ * - Main Content
+ * 
+ * ----------------------------------------------------------------*/
+/* -----------------------------------------------------------------
+ * Base Styles
+ * ----------------------------------------------------------------*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  height: 100%;
+  background: url(img/bg-background.jpg) repeat 0 0, #fafafa; }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: normal 400 1.2rem/1.66667 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b0b0b0; }
+
+h1 {
+  margin: 1em 0; }
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.714285714;
+  color: #46a4d5; }
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: none; }
+
+a {
+  -webkit-transition: all 333ms ease-out;
+  -moz-transition: all 333ms ease-out;
+  transition: all 333ms ease-out;
+  color: #46a4d5;
+  text-decoration: none; }
+  a:hover {
+    color: #515050;
+    text-decoration: underline; }
+
+img, audio, video {
+  max-width: 100%;
+  height: 100%; }
+
+ul, ol {
+  list-style: none;
+  padding: 0; }
+  ul li, ol li {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ededed; }
+
+article {
+  background: white;
+  position: relative;
+  padding: 3rem 3rem 1rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  box-shadow: 0 1px 1px #eaeaea; }
+  article h1 {
+    text-transform: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0; }
+  article header p {
+    text-transform: uppercase;
+    font-size: 1rem; }
+  article header time {
+    position: absolute;
+    top: 0;
+    left: -10rem;
+    font: normal 400 2rem/1.2 "Open Sans", "open-sans", "Century Gothic", "Apple Gothic", sans-serif;
+    text-align: center;
+    background: #46a4d5;
+    color: white;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    padding-top: 1.5rem; }
+    article header time sub {
+      display: block;
+      text-transform: lowercase;
+      font-size: 1.2rem;
+      font-weight: 300; }
+
+/* -----------------------------------------------------------------
+ * Abstract Classes 
+ * ----------------------------------------------------------------*/
+.viewport {
+  margin: 0 auto;
+  max-width: 98rem;
+  *zoom: 1; }
+  .viewport:before, .viewport:after {
+    content: " ";
+    display: table; }
+  .viewport:after {
+    clear: both; }
+
+.page-banner {
+  border-top: 1px solid #46a4d5;
+  background: transparent url(img/bg-header.jpg) repeat 0 0;
+  border-bottom: 1px solid #ededed;
+  box-shadow: inset 0 -1px 5px rgba(237, 237, 237, 0.5);
+  margin-bottom: 6rem; }
+  .page-banner h1 {
+    display: inline-block; }
+  .page-banner p {
+    display: inline-block;
+    position: relative;
+    top: -.5em;
+    margin: 0 0 0 3em;
+    padding: 0 0 0 2em;
+    border-left: 1px solid #cccccc; }
+
+.primary {
+  float: left;
+  width: 70%; }
+  .primary .pager {
+    position: relative;
+    margin-left: 10rem; }
+    .primary .pager li {
+      display: inline-block;
+      margin-right: .4em;
+      text-transform: uppercase; }
+      .primary .pager li a {
+        padding: .8em 1.4em;
+        background-color: white;
+        color: black;
+        border-bottom: 4px solid #ededed; }
+        .primary .pager li a span {
+          font-size: 15px; }
+        .primary .pager li a.active {
+          background-color: #cccccc;
+          border-color: #46a4d5; }
+        .primary .pager li a:hover {
+          border-color: #46a4d5;
+          text-decoration: none; }
+
+.secondary {
+  float: right;
+  width: 24%; }
+
+/* -----------------------------------------------------------------
+ * Site Banner
+ * ----------------------------------------------------------------*/
+div[role='banner'] {
+  padding: 7.5rem 0 5rem; }
+  div[role='banner'] h1 {
+    float: left;
+    width: auto;
+    margin: 0; }
+    div[role='banner'] h1 a {
+      display: block;
+      width: 112px;
+      height: 32px;
+      background: transparent url(img/logo.png) no-repeat 0 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+  div[role='banner'] nav {
+    float: right;
+    width: auto; }
+    div[role='banner'] nav > * {
+      display: inline-block;
+      margin: 0; }
+    div[role='banner'] nav li {
+      display: none;
+      border: none; }
+      div[role='banner'] nav li:first-child {
+        display: inline-block; }
+
+/* -----------------------------------------------------------------
+ * Site Footer
+ * ----------------------------------------------------------------*/
+footer[role='contentinfo'] div {
+  float: left;
+  width: 25%; }
+footer[role='contentinfo'] h1 {
+  display: none; }
+footer[role='contentinfo'] p, footer[role='contentinfo'] nav {
+  clear: both; }
+
+/* -----------------------------------------------------------------
+ * Main Content
+ * ----------------------------------------------------------------*/
+.primary li {
+  padding: 0;
+  border: none; }
+
+.slideshow, .media {
+  margin: -3rem -3rem 1.5rem; }
+  .slideshow li, .media li {
+    display: none; }
+    .slideshow li:first-child, .media li:first-child {
+      display: block; }
+  .slideshow img, .media img {
+    display: block; }
+  .slideshow a, .media a {
+    display: none; }
