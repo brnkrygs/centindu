@@ -4,6 +4,14 @@
 /* -----------------------------------------------------------------
  * Colours
  * ----------------------------------------------------------------*/
+/* -----------------------------------------------------------------
+ * Placeholders
+ * ----------------------------------------------------------------*/
+h1, h2, h3 {
+  font: normal 300 3rem "Open Sans", "open-sans", "Century Gothic", "Apple Gothic", sans-serif;
+  text-transform: uppercase;
+  color: #515050; }
+
 /*
  * style.css
  * copyright 2013 Janson Hartliep
@@ -28,3 +36,33 @@ html {
   font-size: 10px;
   height: 100%;
   background: url(img/bg-background.jpg) repeat 0 0, #fafafa; }
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: normal 400 1.2rem/1.66667 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b0b0b0; }
+
+h1 {
+  margin: 1em 0; }
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.714285714;
+  color: #46a4d5; }
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: none; }
+
+a {
+  -webkit-transition: all 333ms ease-out;
+  -moz-transition: all 333ms ease-out;
+  transition: all 333ms ease-out;
+  color: #46a4d5;
+  text-decoration: none; }
+  a :hover {
+    color: #515050;
+    text-decoration: underline; }

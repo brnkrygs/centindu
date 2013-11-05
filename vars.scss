@@ -2,8 +2,20 @@
  * Type variables
  * ----------------------------------------------------------------*/
 $base_font: 10px;
+$sans_family: 'Open Sans', 'open-sans', 'Century Gothic', 'Apple Gothic', sans-serif;
 
 /* -----------------------------------------------------------------
  * Colours
  * ----------------------------------------------------------------*/
 $background: #fafafa;
+$heading: #515050;
+$light_blue: #46a4d5;
+
+/* -----------------------------------------------------------------
+ * Placeholders
+ * ----------------------------------------------------------------*/
+*%base_heading {
+  font: normal 300 3rem $sans_family;
+  text-transform: uppercase;
+  color: $heading;
+}
