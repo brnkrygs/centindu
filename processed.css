@@ -148,12 +148,15 @@ article {
     margin-left: 10rem; }
     .primary .pager li {
       display: inline-block;
-      margin-right: .4em; }
+      margin-right: .4em;
+      text-transform: uppercase; }
       .primary .pager li a {
         padding: .8em 1.4em;
         background-color: white;
         color: black;
         border-bottom: 4px solid #ededed; }
+        .primary .pager li a span {
+          font-size: 15px; }
         .primary .pager li a.active {
           background-color: #cccccc;
           border-color: #46a4d5; }
