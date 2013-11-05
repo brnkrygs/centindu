@@ -127,14 +127,7 @@
   .viewport {
     margin: 0 auto;
     max-width: 98rem;
-  }
-  .viewport:before, .cf:before, 
-  .viewport:after, .cf:after {
-    content: " "; 
-    display: table; 
-  }
-  .viewport:after, .cf:after {
-    clear: both;
+    @include clearfix;
   }
 
   .page-banner {
@@ -161,6 +154,33 @@
   .primary {
     float: left;
     width: 70%;
+
+    .pager{
+      position: relative;
+      margin-left: 10rem;
+
+      li{
+        display:inline-block;
+        margin-right: .4em;
+
+        a{
+          padding: .8em 1.4em;
+          background-color: $white;
+          color: $black;
+          border-bottom: 4px solid $border;
+
+          &.active{
+            background-color: $border_light;
+            border-color: $light_blue;
+          }
+          
+          &:hover{
+            border-color: $light_blue;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
   .secondary {
     float: right;

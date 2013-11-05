@@ -116,15 +116,13 @@ article {
  * ----------------------------------------------------------------*/
 .viewport {
   margin: 0 auto;
-  max-width: 98rem; }
-
-.viewport:before, .cf:before,
-.viewport:after, .cf:after {
-  content: " ";
-  display: table; }
-
-.viewport:after, .cf:after {
-  clear: both; }
+  max-width: 98rem;
+  *zoom: 1; }
+  .viewport:before, .viewport:after {
+    content: " ";
+    display: table; }
+  .viewport:after {
+    clear: both; }
 
 .page-banner {
   border-top: 1px solid #46a4d5;
@@ -145,6 +143,23 @@ article {
 .primary {
   float: left;
   width: 70%; }
+  .primary .pager {
+    position: relative;
+    margin-left: 10rem; }
+    .primary .pager li {
+      display: inline-block;
+      margin-right: .4em; }
+      .primary .pager li a {
+        padding: .8em 1.4em;
+        background-color: white;
+        color: black;
+        border-bottom: 4px solid #ededed; }
+        .primary .pager li a.active {
+          background-color: #cccccc;
+          border-color: #46a4d5; }
+        .primary .pager li a:hover {
+          border-color: #46a4d5;
+          text-decoration: none; }
 
 .secondary {
   float: right;
