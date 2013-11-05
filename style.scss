@@ -1,0 +1,27 @@
+@import 'bourbon/bourbon';
+@import 'vars.scss';
+
+/*
+ * style.css
+ * copyright 2013 Janson Hartliep
+ *
+ * Table of Contents
+ * - Base Styles
+ * - Abstract Classes
+ * - Site Banner
+ * - Site Footer
+ * - Main Content
+ * 
+ * ----------------------------------------------------------------*/
+/* -----------------------------------------------------------------
+ * Base Styles
+ * ----------------------------------------------------------------*/
+  *, *:before, *:after {
+    @include box-sizing(border-box);
+  }
+
+  html {
+    font-size: $base_font;
+    height: 100%;
+    background: url(img/bg-background.jpg) repeat 0 0, $background;
+  }
